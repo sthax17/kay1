@@ -1,12 +1,18 @@
 {% extends 'base.html' %}
 
-{% block content %}
+{%  block content %}
 
 
-    <div style="margin: 2rem; text-align: center">
-        <h1>Method</h1>
+     <div style="margin: 2rem; text-align: center">
+          <h1>Method</h1>
+          <form action="/accounts/hello_world/" method="post">
+              {% csrf_token %}
+              <input class="btn btn-dark rounded-pill px-4" type="submit">
 
-        <h3>{{ text }}</h3>
-    </div>
+          </form>
+
+          <h3>{{ text }}</h3>
+
+     </div>
 
 {% endblock %}
