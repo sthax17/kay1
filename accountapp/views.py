@@ -25,7 +25,7 @@ def hello_world(request):
                       context={'hello_world_list': hello_world_list})
 
 
-class AccountCreatView(CreateView):
+class AccountCreateView(CreateView):
     model = User
     form_class = UserCreationForm
     success_url = reverse_lazy('accountapp:hello_world')
