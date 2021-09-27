@@ -22,7 +22,7 @@ services:
       - kay1_media:/home/kay1/media/
     secrets:
       - DJANGO_SECRET_KEY
-      -
+      
   mariadb:
     image: mariadb:10.5
     networks:
