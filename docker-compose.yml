@@ -25,7 +25,7 @@ services:
       - MARIADB_USER
       - MARIADB_PASSWORD
 
-      
+
   mariadb:
     image: mariadb:10.5
     networks:
