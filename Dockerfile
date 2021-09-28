@@ -2,13 +2,11 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "SSDadsad"
+RUN echo "aswdff"
 
 RUN git clone https://github.com/sthax17/kay1.git
 
 WORKDIR /home/kay1/
-
-RUN echo "SECRET_KEY=django-insecure-!ib0$u*^zi(rn4vlp%&4&1=*fw)$oskd36$pely$in+l+!#dv-" > .env
 
 RUN pip install -r requirements.txt
 
