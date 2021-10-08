@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "aswdff"
+RUN echo "adsadsad"
 
 RUN git clone https://github.com/sthax17/kay1.git
 
